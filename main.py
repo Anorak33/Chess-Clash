@@ -39,12 +39,12 @@ class Game:
         pass
                     
     def display(self):
+        self.screen.fill("black") 
+          
         for i in range(len(self.grid)):
             for j in range(len(self.grid[i])):
                 self.grid[i][j].draw(self.screen)
-        
-        
-        self.screen.fill("black")       
+
         pygame.display.flip()
     
     def run(self):
